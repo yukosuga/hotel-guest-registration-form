@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guest Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:wght@200&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="./img/favicon_h.png" size="16x16" type="image/png" />
+</head>
+
+<body>
+    <header>
+        <img src="./img/hero_image.png" alt="A huge hotel room with a wonderful sea view" />
+        <h1>Hotel Guest Registration Form</h1>
+    </header>
+
+    <main>
+        <form action="#">
+            <section class="personalInfo">
+                <label>
+                    <input type="text" name="firstName" placeholder="First Name *" required />
+                </label>
+                <label>
+                    <input type="text" name="lastName" placeholder="Last Name *" required />
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="Email *" required />
+                </label>
+                <label>
+                    <input type="password" name="password" placeholder="Password *" required />
+                </label>
+                <br />
+                <label>
+                    <input type="tel" name="phoneNumber" placeholder="Phone Number *" required />
+                </label>
+                <label>
+                    <input type="text" name="street" placeholder="Street *" required />
+                </label>
+                <label>
+                    <input type="text" name="city" placeholder="City *" required />
+                </label>
+                <label>
+                    <input type="text" name="postalCode" placeholder="Postal Code *" />
+                </label>
+                <label>
+                    <input type="text" name="country" placeholder="Country *" />
+                </label>
+            </section>
+            <br />
+
+            <section class="bookingDetails">
+                <label for="roomType">Room Type</label>
+                <select name="roomType" id="roomType">
+                    <option value="" disabled selected>Please select</option>
+                    <option value="singleRoom">Single Room</option>
+                    <option value="twinRoom">Twin Room</option>
+                    <option value="doubleRoom">Double Room</option>
+                    <option value="standardRoom">Standard Room</option>
+                    <option value="studioApartment">Studio Apartment</option>
+                </select>
+
+                <label for="numberOfGuests">Number of Guests</label>
+                <input type="number" name="numberOfGuests" id="numberOfGuests" min="1" max="4" />
+
+                <label for="check-inDate">Check-in Date</label>
+                <input type="date" name="check-inDate" id="check-inDate" />
+
+                <label for="check-outDate">Check-out Date</label>
+                <input type="date" name="check-outDate" id="check-outDate" />
+
+                <label for="arrivalTime">Expected Arrival Time</label>
+                <input type="time" name="arrivalTime" id="arrivalTime" />
+
+                <div class="checkbox">
+                    <p>Special Requests</p>
+                    <input type="checkbox" name="specialRequests" id="breakfast" />
+                    <label for="breakfast">Breakfast</label>
+
+                    <input type="checkbox" name="specialRequests" id="pickUp" />
+                    <label for="pickUp">Pick-Up</label>
+
+                    <input type="checkbox" name="specialRequests" id="lateCheck-in" />
+                    <label for="pickUp">Late Check-in</label>
+                    <br />
+                    <input type="checkbox" name="specialRequests" id="others" />
+                    <label for="others">others</label>
+                    <input type="text" name="others" id="othersText" placeholder="Please write your requests..." />
+                </div>
+                <br />
+                <div class="radio">
+                    <p>Payment</p>
+                    <input type="radio" name="payment" id="creditCard" />
+                    <label for="creditCard">Credit Card</label>
+
+                    <input type="radio" name="payment" id="paypal" />
+                    <label for="paypal">Paypal</label>
+
+                    <input type="radio" name="payment" id="mobilePayment" />
+                    <label for="mobilePayment">Mobile Payment</label>
+
+                    <input type="radio" name="payment" id="cash" />
+                    <label for="cash">Cash</label>
+                </div>
+            </section>
+
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

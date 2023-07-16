@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100vw;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+body,
+input,
+input::placeholder,
+select,
+button {
+  font-size: 2.5rem;
+}
+
+body,
+input,
+input::placeholder,
+select,
+select::placeholder,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #818181;
+}
+
+body,
+h1,
+input,
+select {
+  color: #333;
+}
+
+main {
+  width: 35vw;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  margin: 2.5rem 0 10rem;
+}
+
+input,
+select {
+  background-color: #fff;
+  border: transparent;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1.5rem 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 0.1rem solid #818181;
+}
+
+.bookingDetails input,
+.bookingDetails select {
+  margin: 0 auto 2rem;
+}
+
+.checkbox input,
+.radio input {
+  width: 5%;
+  display: inline-block;
+}
+
+.checkbox label,
+.radio label {
+  font-size: 2.2rem;
+}
+
+.checkbox label,
+.radio label,
+button {
+  cursor: pointer;
+}
+
+.checkbox input:last-child {
+  width: 100%;
+}
+
+button {
+  color: #fff;
+  font-weight: 600;
+  background: #333;
+  border: 0.2rem solid #818181;
+}

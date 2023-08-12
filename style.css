@@ -20,7 +20,8 @@ body,
 input,
 input::placeholder,
 select,
-button {
+button,
+#othersText {
   font-size: 2.5rem;
 }
 
@@ -29,19 +30,22 @@ input,
 input::placeholder,
 select,
 select::placeholder,
-button {
+button,
+#othersText {
   font-family: "Poppins", sans-serif;
 }
 
 input::placeholder,
-select::placeholder {
+select::placeholder,
+#othersText::placeholder {
   color: #818181;
 }
 
 body,
 h1,
 input,
-select {
+select,
+#othersText {
   color: #333;
 }
 
@@ -58,13 +62,15 @@ h1 {
 }
 
 input,
-select {
+select,
+textarea {
   background-color: #fff;
   border: transparent;
 }
 
 input,
 select,
+textarea,
 button {
   width: 100%;
   margin: 2rem auto;
@@ -73,7 +79,8 @@ button {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
   outline: none;
   border: 0.1rem solid #818181;
 }
@@ -104,9 +111,34 @@ button {
   width: 100%;
 }
 
+#others:checked ~ #othersText {
+  display: block;
+}
+
+#othersText {
+  display: none;
+}
 button {
   color: #fff;
   font-weight: 600;
   background: #333;
   border: 0.2rem solid #818181;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  main {
+    width: 65vw;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  main {
+    width: 45vw;
+  }
 }

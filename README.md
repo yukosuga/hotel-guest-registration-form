@@ -1,6 +1,6 @@
 # Mini Project 2 🏖 at Web Development Course
 ## Hotel Guest Registration Form
-### HTML From Element
+### HTML Form Element
 ![Github page top image](./img/readme_image.png)
 
 Practicing HTML Form Elements.  

@@ -90,24 +90,24 @@ textarea:focus {
   margin: 0 auto 2rem;
 }
 
-.checkbox input,
-.radio input {
+.container-specialRequests input,
+.container-payment input {
   width: 5%;
   display: inline-block;
 }
 
-.checkbox label,
-.radio label {
+.container-specialRequests label,
+.container-payment label {
   font-size: 2.2rem;
 }
 
-.checkbox label,
-.radio label,
+.container-specialRequests label,
+.container-payment label,
 button {
   cursor: pointer;
 }
 
-.checkbox input:last-child {
+.container-specialRequests input:last-child {
   width: 100%;
 }
 
@@ -118,6 +118,7 @@ button {
 #othersText {
   display: none;
 }
+
 button {
   color: #fff;
   font-weight: 600;
